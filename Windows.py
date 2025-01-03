@@ -27,7 +27,7 @@ class RemoteControlApp:
     async def connect_to_server(self):
         try:
             print("Connecting to phone...")
-            self.websocket = await websockets.connect("ws://192.168.1.110:6666")
+            self.websocket = await websockets.connect("ws://127.0.0.1:6666")
             print("Connected to phone")
         except Exception as e:
             print(f"Connection error: {e}")
